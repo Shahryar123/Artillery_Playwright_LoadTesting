@@ -1,0 +1,31 @@
+config:
+  target: "https://emailautomationiqtech.azurewebsites.net"
+  engines:
+    playwright: 
+      launchOptions:
+        headless: false
+  processor: "./tests/artillery/login-flow.js"
+  phases:
+  # Inject one user for every second for 20 seconds
+  - name: Constant Arrival
+    duration: 20   # run for 20 seconds
+    arrivalRate: 1  # 20 users will be created
+  # # Pause
+  # - name: Pause
+  #   duration: 10
+  # # RampUp
+  # - name: RampUp
+  #   duration: 30
+  #   arrivalRate: 1
+  #   rampTo: 2
+  # # Inject 2 Users in 20 sec
+  # - name: Fixed Arrival
+  #   duration: 20
+  #   arrivalCount: 2
+scenarios:
+  - engine: playwright
+    testFunction: "artilleryTest"
+
+
+
+
