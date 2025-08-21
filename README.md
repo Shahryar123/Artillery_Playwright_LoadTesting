@@ -1,14 +1,22 @@
-create a playwright proj
-	npm init playwright@latest
-install artillery
-	npm install -g artillery
-run playwright test only
-	npx playwright test --headed
-run artillery load test
-	artillery run artillery.yml
+Initialized Playwright Project
+	
+ npm init playwright@latest
 
-create playwright test from recorder
+Install Artillery dependency (global)
+	
+ 	npm install -g artillery
+
+Run Playwright Tests only
+	
+ 	npx playwright test --headed
+
+Execute Artillery Load Test
+	
+ 	artillery run artillery.yml
+
+Create Playwright Test from Playwright Recorder
 
 	npx playwright codegen
+Install Dependencies
 
-npm install
+	npm install
