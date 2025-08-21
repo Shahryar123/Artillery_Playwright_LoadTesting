@@ -1,6 +1,6 @@
 Initialized Playwright Project
 	
- npm init playwright@latest
+ 	npm init playwright@latest
 
 Install Artillery dependency (global)
 	
