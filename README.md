@@ -64,3 +64,16 @@ npx playwright codegen
 - After running Playwright tests, view the HTML report in [`playwright-report/index.html`](playwright-report/index.html).
 
 ##
+
+### Artillery Reports
+
+- Create json file for the metrics outpur
+```sh
+artillery run artillery.yml --output results.json
+```
+
+- || The "report" command has been deprecated and is no longer supported
+- Create html report from the json
+```sh
+artillery report results.json
+```
