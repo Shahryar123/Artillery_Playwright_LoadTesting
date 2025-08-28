@@ -41,7 +41,7 @@ def main():
 
                 # Type PIN
                 logger.info("Typing PIN...")
-                pyautogui.typewrite(PIN, interval=0.1)
+                pyautogui.typewrite(PIN, interval=0.01)
 
                 # Press Enter
                 pyautogui.press("enter")
